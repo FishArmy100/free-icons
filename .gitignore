@@ -1,8 +1,0 @@
-# files used during development
-data.json
-
-# build
-dist
-
-# node modules
-node_modules
