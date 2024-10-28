@@ -1,3 +1,6 @@
+# NOTE:
+This is orrigonally from (here)[https://github.com/free-icons/free-icons] and moved to a different website. This is a fork of the repository that reverts the deletion commit. I will remove this if it is illegal, but as the old stuff is under something like MIT, I think its fine?
+
 # Free Icons
 
 ![Social Preview](social-preview.png)
