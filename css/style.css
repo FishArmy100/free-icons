@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#github svg {
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
+#search-input {
+  height: 2.5rem;
+  max-width: calc(100vw - 270px);
+}
+
+#header {
+  background-color: #6366f1;
+  height: 4.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+#icon-modal .modal-dialog {
+  max-width: 1200px;
+}
+
+.icon {
+  background-color: rgb(255, 255, 255);
+  padding-inline: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  transition: background 100ms ease-in-out;
+  position: relative;
+  max-width: 16rem;
+  display: grid;
+  place-items: center;
+}
+
+.icon svg {
+  width: 100%;
+}
+
+.icon p {
+  text-align: center;
+}
+
+.icon:hover {
+  background-color: #6366f1;
+}
+
+body {
+  background-color: #f0f1f3;
+}
+
+#icons-wrapper {
+  width: min-content;
+  margin-inline: auto;
+  padding: 0.5rem;
+  padding-top: 5.5rem;
+}
+
+#icons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.9rem;
+}
+
+#icons .spinner-border {
+  margin-top: 10rem;
+  color: #6366f1;
+}
+
+@media only screen and (max-width: 1160px) {
+  #icons {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .icon {
+    width: calc((100vw - 6.4rem) / 5);
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  #icons {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .icon {
+    width: calc((100vw - 6.4rem) / 4);
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  #icons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .icon:hover {
+    background-color: #fff;
+  }
+
+  .icon .download {
+    opacity: 1;
+  }
+
+  .icon:hover .download {
+    color: #2d2d2d;
+  }
+
+  .icon {
+    width: calc((100vw - 4rem) / 3);
+    padding-inline: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #icons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .icon {
+    width: calc((100vw - 3rem) / 2);
+  }
+}
